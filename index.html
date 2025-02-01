@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="منصة الاحرار الذكاء الاصطناعي 5.5 بيتا - القوة الثورية في تحليل البيانات والذكاء التنبؤي">
-    <meta name="keywords" content="ذكاء اصطناعي, AI 5.5, تحليل البيانات, التعلم العميق, منصة الاحرار">
-    <title>الاحرار للذكاء الاصطناعي - الإصدار 5.5 البيتا</title>
+    <meta name="description" content="منصة الأحرار للذكاء الاصطناعي 5.5 بيتا: القوة الثورية في تحليل البيانات والذكاء التنبؤي. اكتشف أحدث تقنيات التعلم العميق في العالم العربي.">
+    <meta name="keywords" content="ذكاء اصطناعي, AI 5.5, تحليل البيانات, التعلم العميق, منصة الأحرار, تعلم آلي, معالجة اللغة الطبيعية, رؤية حاسوبية, التنبؤ الذكي, الذكاء الاصطناعي العربي">
+
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="الأحرار للذكاء الاصطناعي - الإصدار 5.5 البيتا">
+    <meta property="og:description" content="منصة الأحرار للذكاء الاصطناعي 5.5 بيتا: القوة الثورية في تحليل البيانات والذكاء التنبؤي. اكتشف أحدث تقنيات التعلم العميق في العالم العربي.">
+    <meta property="og:image" content="URL_TO_YOUR_FEATURED_IMAGE.jpg">
+    <meta property="og:url" content="YOUR_WEBSITE_URL">
+    <meta property="og:type" content="website">
+
+    <title>الأحرار للذكاء الاصطناعي | AI 5.5 بيتا - تحليل بيانات وذكاء تنبؤي</title>
+
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="YOUR_WEBSITE_URL" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="YOUR_FAVICON.ico" type="image/x-icon">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -21,14 +35,16 @@
             --primary-color: #1a237e;
             --secondary-color: #4a148c;
             --accent-color: #7c4dff;
+             --blue-color: #007bff;
         }
 
-        body {
+       body {
             font-family: 'Cairo', sans-serif;
             background: #f8f9fa;
+            overflow-x: hidden;
         }
 
-        .scroll-progress {
+      .scroll-progress {
             height: 3px;
             background: var(--accent-color);
             position: fixed;
@@ -38,167 +54,191 @@
             transition: width 0.3s ease;
         }
 
-        .company-name {
-            font-size: 1.8rem;
+      .company-name {
+           font-size: 1.8rem;
             font-weight: 800;
             background: linear-gradient(45deg, #ff6b6b, #ffd93d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+             display: inline-block;
+          }
 
-        .nav-glass {
+       .nav-glass {
             background: rgba(255, 255, 255, 0.1) !important;
-            backdrop-filter: blur(15px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+           backdrop-filter: blur(15px);
+           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
-
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%),
-                        url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
+          .hero-section {
+           background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%),
+             url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+           background-size: cover;
             background-position: center;
             min-height: 100vh;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            padding-top: 80px;
+           color: white;
+           position: relative;
+             overflow: hidden;
+             padding-top: 80px;
         }
 
-        .version-badge {
+     .version-badge {
             background: var(--accent-color);
             padding: 6px 15px;
             border-radius: 20px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            animation: pulse 2s infinite;
-        }
+             font-weight: 700;
+           font-size: 0.9rem;
+             animation: pulse 2s infinite;
+            display: inline-block;
+          }
 
-        .cta-button {
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-            border: none;
-            padding: 12px 30px;
+      .cta-button {
+           background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+             border: none;
+           padding: 12px 30px;
             font-size: 1rem;
-            border-radius: 40px;
-            transition: all 0.3s;
-            color: #fff;
-            font-weight: 600;
-            width: 100%;
-            max-width: 300px;
-        }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.95);
+           border-radius: 40px;
+           transition: all 0.3s;
+             color: #fff;
+             font-weight: 600;
+             width: 100%;
+           max-width: 300px;
+              cursor: pointer;
+          }
+       .feature-card {
+           background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
             transition: transform 0.3s, box-shadow 0.3s;
             border: 2px solid #e0e0e0;
-            opacity: 0;
-            transform: translateY(30px);
-            margin-bottom: 15px;
-        }
-
+             opacity: 0;
+             transform: translateY(30px);
+             margin-bottom: 15px;
+       }
         .feature-card h5,
         .feature-card p {
-            color: #000 !important;
+             color: #000 !important;
         }
-
         .feature-icon {
             color: var(--primary-color);
             background: linear-gradient(45deg, #7c4dff, #1a237e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+             -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
             font-size: 2rem !important;
         }
-
-        .stats-number {
+       .stats-number {
             font-size: 2.5rem;
             font-weight: 700;
             background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
             opacity: 0;
-            transform: translateY(20px);
+             transform: translateY(20px);
         }
-
         .ai-model-showcase {
             background: url('https://images.unsplash.com/photo-1573164713986-3e5590b0a7d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
             background-size: cover;
             background-attachment: fixed;
-            position: relative;
+             position: relative;
             z-index: 1;
         }
 
-        .overlay-dark {
+      .overlay-dark {
             background: rgba(0, 0, 0, 0.85);
-        }
+         }
 
-        .neon-border {
-            border: 2px solid transparent;
-            border-radius: 20px;
-            background: linear-gradient(45deg, var(--primary-color), var(--accent-color)) border-box;
-            -webkit-mask: 
-                linear-gradient(#fff 0 0) padding-box, 
-                linear-gradient(#fff 0 0);
-        }
+      .neon-border {
+          border: 2px solid transparent;
+           border-radius: 20px;
+          background: linear-gradient(45deg, var(--primary-color), var(--accent-color)) border-box;
+          -webkit-mask:
+               linear-gradient(#fff 0 0) padding-box,
+            linear-gradient(#fff 0 0);
+     }
 
-        .registration-form input,
-        .registration-form select {
-            border: 2px solid #e0e0e0 !important;
-            transition: all 0.3s !important;
-        }
+      .registration-form input,
+      .registration-form select {
+          border: 2px solid #e0e0e0 !important;
+          transition: all 0.3s !important;
+       }
 
-        @media (max-width: 768px) {
+     /* Style for the comparison table */
+   .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+     margin-bottom: 2rem; /* Added some margin for spacing */
+   }
+
+    .comparison-table th,
+    .comparison-table td {
+    border: 1px solid #dee2e6;
+      padding: 0.75rem;
+      text-align: center;
+     }
+    .comparison-table th {
+      background-color: #e9ecef;
+    }
+
+ .comparison-table td:first-child {
+    font-weight: bold;
+    text-align: right; /* Align the first column to the right */
+}
+
+
+        .comparison-table th:nth-child(2),
+        .comparison-table td:nth-child(2) {
+              color: var(--blue-color) !important; /* Color for your model */
+              font-weight: 800; /* Added bold style for your model column */
+         }
+          /* Media Queries (Responsive Design) */
+         @media (max-width: 768px) {
             .company-name {
-                font-size: 1.4rem;
+              font-size: 1.4rem;
+             }
+
+          .hero-section {
+              padding-top: 60px;
+               min-height: auto;
+              padding-bottom: 60px;
+             }
+
+             .hero-section h1 {
+              font-size: 2rem !important;
             }
 
-            .hero-section {
-                padding-top: 60px;
-                min-height: auto;
-                padding-bottom: 60px;
-            }
-
-            .hero-section h1 {
-                font-size: 2rem !important;
-            }
-
-            .hero-section .lead {
+             .hero-section .lead {
                 font-size: 1.1rem !important;
-            }
+           }
+              .feature-card {
+             margin: 10px 0;
+              }
 
-            .feature-card {
-                margin: 10px 0;
-            }
+           .stats-number {
+              font-size: 2rem;
+           }
 
-            .stats-number {
-                font-size: 2rem;
-            }
-
-            .ai-model-showcase {
-                background-attachment: scroll;
-            }
+         .ai-model-showcase {
+           background-attachment: scroll;
+           }
 
             .neon-border {
-                margin: 15px 0;
-                padding: 15px !important;
-            }
+             margin: 15px 0;
+           padding: 15px !important;
+           }
 
             .registration-form {
-                padding: 20px !important;
-            }
+           padding: 20px !important;
+          }
 
-            footer .col-md-4 {
+           footer .col-md-4 {
                 margin-bottom: 2rem;
-                text-align: center;
-            }
+             text-align: center;
+           }
         }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+         @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+           100% { transform: scale(1); }
         }
-    </style>
+ </style>
 </head>
 <body>
 
@@ -206,289 +246,565 @@
 <div class="scroll-progress" style="width: 0%"></div>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark nav-glass fixed-top">
-    <div class="container py-2">
-        <a class="navbar-brand" href="#">
-            <span class="company-name">الاحرار للذكاء الاصطناعي</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+ <nav class="navbar navbar-expand-lg navbar-dark nav-glass fixed-top" aria-label="Main Navigation">
+     <div class="container py-2">
+            <a class="navbar-brand" href="#home" aria-label="العودة للصفحة الرئيسية">
+            <span class="company-name">الأحرار للذكاء الاصطناعي</span>
+           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-2"><a class="nav-link active" href="#">الرئيسية</a></li>
+                <ul class="navbar-nav ms-auto">
+                 <li class="nav-item mx-2"><a class="nav-link active" href="#home" aria-current="page">الرئيسية</a></li>
                 <li class="nav-item mx-2"><a class="nav-link" href="#features">المميزات</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#stats">الأرقام</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#contact">التسجيل المسبق</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+               <li class="nav-item mx-2"><a class="nav-link" href="#stats">الأرقام</a></li>
+                   <li class="nav-item mx-2"><a class="nav-link" href="#contact">التسجيل المسبق</a></li>
+                 </ul>
+         </div>
+     </div>
+  </nav>
 
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="container text-center py-4">
-        <div class="version-badge d-inline-block mb-3">الإصدار 5.5 بيتا</div>
-        <h1 class="display-5 fw-bold mb-3">
-            <span class="d-block">الثورة التقنية الجديدة</span>
-            <span class="d-block text-warning mt-2">الذكاء الاصطناعي 5.5</span>
-        </h1>
-        <p class="lead fs-5 mb-4">أقوى نموذج ذكاء اصطناعي في العالم العربي بتقنيات التعلم المعزّز المتقدمة</p>
-        <button class="cta-button btn btn-lg mb-4 mx-auto">سجل الآن للحصول على النسخة المبكرة</button>
-        
-        <!-- Features Grid -->
-        <div class="row mt-3 g-3" id="features">
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature-card p-3 text-center">
-                    <i class="fas fa-bolt feature-icon mb-2"></i>
-                    <h5>سرعة معالجة فائقة</h5>
-                    <p class="small">أسرع 5 مرات من الإصدارات السابقة</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature-card p-3 text-center">
-                    <i class="fas fa-brain feature-icon mb-2"></i>
-                    <h5>شبكات عصبية متطورة</h5>
-                    <p class="small">أكثر من 500 مليون معلمة تدريب</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature-card p-3 text-center">
-                    <i class="fas fa-shield-alt feature-icon mb-2"></i>
-                    <h5>حماية متقدمة</h5>
-                    <p class="small">نظام أمان من الجيل الخامس</p>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="feature-card p-3 text-center">
-                    <i class="fas fa-language feature-icon mb-2"></i>
-                    <h5>دعم لغوي مميز</h5>
-                    <p class="small">معالجة 15 لهجة عربية</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Stats Section -->
-<section id="stats" class="py-5 bg-white">
-    <div class="container">
-        <div class="row g-4 text-center">
-            <div class="col-6 col-md-3">
-                <div class="stats-number" data-target="5.5x">0</div>
-                <h5>سرعة أكبر</h5>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stats-number" data-target="99.9%">0</div>
-                <h5>دقة النتائج</h5>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stats-number" data-target="500M+">0</div>
-                <h5>معلمات ذكاء</h5>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="stats-number" data-target="1M+">0</div>
-                <h5>ساعة تدريب</h5>
-            </div>
-        </div>
-    </div>
-</section>
+  <!-- Hero Section -->
+    <section class="hero-section" id="home">
+         <div class="container text-center py-4">
+            <div class="version-badge d-inline-block mb-3" aria-label="الإصدار 5.5 بيتا">الإصدار 5.5 بيتا</div>
+              <h1 class="display-5 fw-bold mb-3">
+                    <span class="d-block">الثورة التقنية الجديدة</span>
+                   <span class="d-block text-warning mt-2">الذكاء الاصطناعي 5.5</span>
+                 </h1>
+              <p class="lead fs-5 mb-4">أقوى نموذج ذكاء اصطناعي في العالم العربي بتقنيات التعلم المعزّز المتقدمة</p>
+             <button class="cta-button btn btn-lg mb-4 mx-auto" aria-label="سجل الآن للحصول على النسخة المبكرة" id="scrollToContact">سجل الآن للحصول على النسخة المبكرة</button>
 
-<!-- Model Showcase Section -->
-<section class="ai-model-showcase py-5">
-    <div class="overlay-dark">
-        <div class="container py-5 text-white">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-6">
-                    <h2 class="h1 fw-bold mb-4">القدرات الاستثنائية للإصدار 5.5</h2>
-                    <ul class="list-unstyled fs-5">
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>تحليل البيانات الضخمة في الوقت الفعلي</li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>التنبؤ بالنتائج بدقة 98.7%</li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>دعم قرارات الأعمال الذكية</li>
-                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>واجهة برمجة متقدمة (API)</li>
-                    </ul>
+             <!-- Features Grid -->
+          <div class="row mt-3 g-3" id="features" aria-label="ميزات النظام">
+            <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-card p-3 text-center">
+                        <i class="fas fa-bolt feature-icon mb-2" aria-hidden="true"></i>
+                         <h5>سرعة معالجة فائقة</h5>
+                       <p class="small">أسرع 5 مرات من الإصدارات السابقة</p>
                 </div>
-                <div class="col-lg-6">
-                    <div class="neon-border p-3">
-                        <img src="https://images.unsplash.com/photo-1573164713986-3e5590b0a7d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                             alt="نموذج الذكاء الاصطناعي" 
-                             class="img-fluid rounded-3"
-                             loading="lazy">
+            </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="feature-card p-3 text-center">
+                    <i class="fas fa-brain feature-icon mb-2" aria-hidden="true"></i>
+                       <h5>شبكات عصبية متطورة</h5>
+                       <p class="small">أكثر من 500 مليون معلمة تدريب</p>
+                   </div>
+           </div>
+               <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="feature-card p-3 text-center">
+                         <i class="fas fa-shield-alt feature-icon mb-2" aria-hidden="true"></i>
+                          <h5>حماية متقدمة</h5>
+                      <p class="small">نظام أمان من الجيل الخامس</p>
                     </div>
+              </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                     <div class="feature-card p-3 text-center">
+                     <i class="fas fa-language feature-icon mb-2" aria-hidden="true"></i>
+                         <h5>دعم لغوي مميز</h5>
+                         <p class="small">معالجة 15 لهجة عربية</p>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+             </div>
+          </div>
+       </div>
+    </section>
 
-<!-- Registration Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="h2 fw-bold mb-4">كن من أوائل المستخدمين</h2>
-                <p class="lead mb-4">سجل الآن للحصول على وصول مسبق للإصدار 5.5 البيتا</p>
-                
-                <form class="neon-border registration-form p-4 bg-white">
-                    <div class="row g-3">
-                        <div class="col-12 col-md-6">
-                            <input type="text" class="form-control form-control-lg" placeholder="الاسم الكامل" required>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <input type="email" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <input type="tel" class="form-control form-control-lg" placeholder="رقم الجوال" required>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <select class="form-select form-select-lg" required>
-                                <option value="">نوع المؤسسة</option>
-                                <option>شركة خاصة</option>
-                                <option>جهة حكومية</option>
-                                <option>مؤسسة غير ربحية</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="cta-button btn btn-primary w-100">إرسال الطلب</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-light py-5">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-md-4">
-                <h4 class="company-name">الاحرار للذكاء الاصطناعي</h4>
-                <p>الريادة في حلول الذكاء الاصطناعي المتقدمة</p>
-            </div>
-            <div class="col-md-4">
-                <h4>الاتصال</h4>
-                <p>الرياض - المملكة العربية السعودية<br>
-                الهاتف: 920000000<br>
-                البريد: info@al-ahrar-ai.com</p>
-            </div>
-            <div class="col-md-4">
-                <h4>تابعنا</h4>
-                <div class="d-flex gap-3 justify-content-center">
-                    <a href="#" class="btn btn-outline-light btn-lg"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-lg"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-lg"><i class="fab fa-youtube"></i></a>
+  <!-- Stats Section -->
+    <section id="stats" class="py-5 bg-white">
+       <div class="container">
+           <div class="row g-4 text-center">
+               <div class="col-6 col-md-3">
+                    <div class="stats-number" data-target="5.5x" aria-label="5.5 أضعاف السرعة">0</div>
+                      <h5>سرعة أكبر</h5>
                 </div>
-            </div>
+                 <div class="col-6 col-md-3">
+                      <div class="stats-number" data-target="99.9%" aria-label="99.9% دقة النتائج">0</div>
+                         <h5>دقة النتائج</h5>
+                  </div>
+               <div class="col-6 col-md-3">
+                      <div class="stats-number" data-target="500M+" aria-label="أكثر من 500 مليون معلمة ذكاء">0</div>
+                        <h5>معلمات ذكاء</h5>
+                  </div>
+                  <div class="col-6 col-md-3">
+                   <div class="stats-number" data-target="1M+" aria-label="أكثر من مليون ساعة تدريب">0</div>
+                     <h5>ساعة تدريب</h5>
+               </div>
+         </div>
         </div>
-        <div class="text-center mt-5">
-            <p class="mb-0">&copy; 2023 الاحرار للذكاء الاصطناعي. جميع الحقوق محفوظة</p>
-        </div>
-    </div>
-</footer>
+    </section>
 
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Scroll Progress Indicator
-    window.addEventListener('scroll', () => {
-        const scrollProgress = document.querySelector('.scroll-progress');
-        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (window.scrollY / windowHeight) * 100;
+   <!-- Model Showcase Section -->
+     <section class="ai-model-showcase py-5" aria-label="عرض قدرات الذكاء الاصطناعي">
+         <div class="overlay-dark">
+            <div class="container py-5 text-white">
+                  <div class="row align-items-center g-4">
+                       <div class="col-lg-6">
+                         <h2 class="h1 fw-bold mb-4">القدرات الاستثنائية للإصدار 5.5</h2>
+                           <ul class="list-unstyled fs-5">
+                                  <li class="mb-3"><i class="fas fa-check-circle text-success me-2" aria-hidden="true"></i>تحليل البيانات الضخمة في الوقت الفعلي</li>
+                             <li class="mb-3"><i class="fas fa-check-circle text-success me-2" aria-hidden="true"></i>التنبؤ بالنتائج بدقة 98.7%</li>
+                                  <li class="mb-3"><i class="fas fa-check-circle text-success me-2" aria-hidden="true"></i>دعم قرارات الأعمال الذكية</li>
+                             <li class="mb-3"><i class="fas fa-check-circle text-success me-2" aria-hidden="true"></i>واجهة برمجة متقدمة (API)</li>
+                              </ul>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="neon-border p-3">
+                                 <img src="https://images.unsplash.com/photo-1573164713986-3e5590b0a7d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                                       alt="نموذج الذكاء الاصطناعي"
+                                        class="img-fluid rounded-3"
+                                        loading="lazy">
+                                  </div>
+                           </div>
+                      </div>
+                 </div>
+            </div>
+    </section>
+      <!-- Registration Section -->
+    <section id="contact" class="py-5 bg-light" aria-label="التسجيل للحصول على النسخة المسبقة">
+        <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                      <h2 class="h2 fw-bold mb-4">كن من أوائل المستخدمين</h2>
+                      <p class="lead mb-4">سجل الآن للحصول على وصول مسبق للإصدار 5.5 البيتا</p>
+                      <form class="neon-border registration-form p-4 bg-white" method="post" action="#" aria-label="نموذج التسجيل">
+                      <div class="row g-3">
+                           <div class="col-12 col-md-6">
+                            <input type="text" class="form-control form-control-lg" placeholder="الاسم الكامل" required aria-label="الاسم الكامل">
+                              </div>
+                            <div class="col-12 col-md-6">
+                                   <input type="email" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required aria-label="البريد الإلكتروني">
+                             </div>
+                              <div class="col-12 col-md-6">
+                                  <input type="tel" class="form-control form-control-lg" placeholder="رقم الجوال" required aria-label="رقم الجوال">
+                             </div>
+                           <div class="col-12 col-md-6">
+                                  <select class="form-select form-select-lg" required aria-label="نوع المؤسسة">
+                                    <option value="">نوع المؤسسة</option>
+                                    <option>شركة خاصة</option>
+                                       <option>جهة حكومية</option>
+                                     <option>مؤسسة غير ربحية</option>
+                                   </select>
+                               </div>
+                              <div class="col-12">
+                                 <button type="submit" class="cta-button btn btn-primary w-100" aria-label="إرسال طلب التسجيل">إرسال الطلب</button>
+                            </div>
+                      </div>
+                    </form>
+                   </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Competitor Comparison Section -->
+  <section class="py-5" aria-label="مقارنة مع المنافسين">
+       <div class="container">
+         <h2 class="text-center fw-bold mb-4">مقارنة مع المنافسين</h2>
+          <p class="text-center lead mb-4">اكتشف كيف يتفوق <span style="color: var(--blue-color);">الأحرار للذكاء الاصطناعي</span> على المنافسين في الأداء والتقنيات المتقدمة.</p>
+             <div class="table-responsive">
+                <table class="comparison-table table table-bordered">
+                   <thead>
+                         <tr>
+                                 <th>Benchmark (Metric)</th>
+                               <th >الأحرار للذكاء الاصطناعي 5.5 </th>
+                              <th>DeepSeek V2.5</th>
+                             <th>Qwen2.5</th>
+                           <th>Llama3.1</th>
+                            <th>Claude-3.5</th>
+                                 <th>GPT-4o</th>
+                        </tr>
+                  </thead>
+                 <tbody>
+                   <tr>
+                     <td>Architecture</td>
+                       <td>MoE</td>
+                     <td>MoE</td>
+                   <td>Dense</td>
+                   <td>Dense</td>
+                    <td>-</td>
+                     <td>-</td>
+                  </tr>
+                  <tr>
+                        <td># Activated Params</td>
+                     <td>37B</td>
+                    <td>21B</td>
+                   <td>72B</td>
+                     <td>405B</td>
+                       <td>-</td>
+                      <td>-</td>
+                 </tr>
+                 <tr>
+                       <td># Total Params</td>
+                       <td>671B</td>
+                     <td>236B</td>
+                     <td>72B</td>
+                       <td>405B</td>
+                         <td>-</td>
+                     <td>-</td>
+                </tr>
+                <tr>
+                    <td>English MMLU (EM)</td>
+                        <td>88.5</td>
+                       <td>80.6</td>
+                      <td>85.3</td>
+                     <td>88.6</td>
+                       <td>88.3</td>
+                       <td>87.2</td>
+             </tr>
+                 <tr>
+                         <td>MMLU-Redux (EM)</td>
+                       <td>89.1</td>
+                         <td>80.3</td>
+                      <td>85.6</td>
+                       <td>86.2</td>
+                       <td>88.9</td>
+                       <td>88.0</td>
+               </tr>
+                <tr>
+                       <td>MMLU-Pro (EM)</td>
+                     <td>75.9</td>
+                       <td>66.2</td>
+                      <td>71.6</td>
+                      <td>73.3</td>
+                     <td>78.0</td>
+                    <td>72.6</td>
+               </tr>
+               <tr>
+                     <td>DROP (3-shot F1)</td>
+                     <td>91.6</td>
+                    <td>87.8</td>
+                   <td>76.7</td>
+                  <td>88.7</td>
+                      <td>88.3</td>
+                     <td>83.7</td>
+            </tr>
+          <tr>
+                   <td>IF-Eval (Prompt Strict)</td>
+                   <td>86.1</td>
+                     <td>80.6</td>
+                      <td>84.1</td>
+                       <td>86.0</td>
+                     <td>86.5</td>
+                    <td>84.3</td>
+          </tr>
+            <tr>
+                    <td>GPQA-Diamond (Pass@1)</td>
+                        <td>59.1</td>
+                        <td>41.3</td>
+                      <td>49.0</td>
+                        <td>51.1</td>
+                        <td>65.0</td>
+                     <td>49.9</td>
+          </tr>
+       <tr>
+             <td>SimpleQA (Correct)</td>
+                   <td>24.9</td>
+                    <td>10.2</td>
+                   <td>9.1</td>
+                   <td>17.1</td>
+                      <td>28.4</td>
+                        <td>38.2</td>
+     </tr>
+     <tr>
+          <td>FRAMES (Acc.)</td>
+               <td>73.3</td>
+                <td>65.4</td>
+                <td>69.8</td>
+                  <td>70.0</td>
+                    <td>72.5</td>
+                    <td>80.5</td>
+   </tr>
+     <tr>
+        <td>LongBench v2 (Acc.)</td>
+             <td>48.7</td>
+              <td>35.4</td>
+            <td>39.4</td>
+               <td>36.1</td>
+               <td>41.0</td>
+                <td>48.1</td>
+   </tr>
+   <tr>
+    <td>Code HumanEval-Mul (Pass@1)</td>
+       <td>82.6</td>
+      <td>77.4</td>
+       <td>77.3</td>
+        <td>77.2</td>
+      <td>81.7</td>
+       <td>80.5</td>
+   </tr>
+   <tr>
+   <td>LiveCodeBench (Pass@1-COT)</td>
+     <td>40.5</td>
+        <td>29.2</td>
+      <td>31.1</td>
+        <td>28.4</td>
+        <td>36.3</td>
+      <td>33.4</td>
+</tr>
+  <tr>
+   <td>LiveCodeBench (Pass@1)</td>
+        <td>37.6</td>
+       <td>28.4</td>
+      <td>28.7</td>
+       <td>30.1</td>
+      <td>32.8</td>
+       <td>34.2</td>
+ </tr>
+  <tr>
+    <td>Codeforces (Percentile)</td>
+        <td>51.6</td>
+         <td>35.6</td>
+       <td>24.8</td>
+      <td>25.3</td>
+        <td>20.3</td>
+       <td>23.6</td>
+  </tr>
+   <tr>
+    <td>SWE Verified (Resolved)</td>
+        <td>42.0</td>
+       <td>22.6</td>
+         <td>23.8</td>
+         <td>24.5</td>
+         <td>50.8</td>
+         <td>38.8</td>
+  </tr>
+   <tr>
+       <td>Aider-Edit (Acc.)</td>
+          <td>79.7</td>
+           <td>71.6</td>
+       <td>65.4</td>
+       <td>63.9</td>
+      <td>84.2</td>
+        <td>72.9</td>
+   </tr>
+    <tr>
+      <td>Aider-Polyglot (Acc.)</td>
+       <td>49.6</td>
+        <td>18.2</td>
+       <td>7.6</td>
+        <td>5.8</td>
+        <td>45.3</td>
+        <td>16.0</td>
+    </tr>
+   <tr>
+     <td>Math AIME 2024 (Pass@1)</td>
+       <td>39.2</td>
+      <td>16.7</td>
+        <td>23.3</td>
+       <td>23.3</td>
+         <td>16.0</td>
+        <td>9.3</td>
+   </tr>
+  <tr>
+   <td>MATH-500 (EM)</td>
+         <td>90.2</td>
+        <td>74.7</td>
+         <td>80.0</td>
+          <td>73.8</td>
+        <td>78.3</td>
+      <td>74.6</td>
+   </tr>
+    <tr>
+    <td>CNMO 2024 (Pass@1)</td>
+       <td>43.2</td>
+        <td>10.8</td>
+        <td>15.9</td>
+      <td>6.8</td>
+        <td>13.1</td>
+       <td>10.8</td>
+   </tr>
+     <tr>
+         <td>Chinese CLUEWSC (EM)</td>
+              <td>90.9</td>
+          <td>90.4</td>
+             <td>91.4</td>
+          <td>84.7</td>
+               <td>85.4</td>
+              <td>87.9</td>
+     </tr>
+     <tr>
+          <td>C-Eval (EM)</td>
+              <td>86.5</td>
+            <td>79.5</td>
+               <td>86.1</td>
+           <td>61.5</td>
+             <td>76.7</td>
+              <td>76.0</td>
+    </tr>
+  <tr>
+         <td>C-SimpleQA (Correct)</td>
+               <td>64.1</td>
+              <td>54.1</td>
+                <td>48.4</td>
+               <td>50.4</td>
+                <td>51.3</td>
+             <td>59.3</td>
+      </tr>
+  </tbody>
+            </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+  <footer class="bg-dark text-light py-5" aria-label="تذييل الموقع">
+       <div class="container">
+         <div class="row g-5">
+             <div class="col-md-4">
+                   <h4 class="company-name">الأحرار للذكاء الاصطناعي</h4>
+                     <p>الريادة في حلول الذكاء الاصطناعي المتقدمة</p>
+                </div>
+                  <div class="col-md-4">
+                      <h4>الاتصال</h4>
+                     <p>كاليفورنيا - الولايات المتحدة<br>
+                         رقم الهاتف: 0632400752<br>
+                     البريد الإلكتروني: haharorosasa123@gmail.com</p>
+                 </div>
+              <div class="col-md-4">
+                      <h4>تابعنا</h4>
+                       <div class="d-flex gap-3 justify-content-center">
+                         <a href="https://www.youtube.com/@progamesouha" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على يوتيوب"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100071251625359" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على فيسبوك"><i class="fab fa-facebook"></i></a>
+                            <a href="https://x.com/SasaSos17194756" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على تويتر"><i class="fab fa-twitter"></i></a>
+
+                       </div>
+                  </div>
+         </div>
+            <div class="text-center mt-5">
+                <p class="mb-0">© 2023 الأحرار للذكاء الاصطناعي. جميع الحقوق محفوظة</p>
+            </div>
+      </div>
+   </footer>
+    <!-- JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+
+         // Scroll Progress Indicator
+        window.addEventListener('scroll', () => {
+          const scrollProgress = document.querySelector('.scroll-progress');
+          const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+           const scrolled = (window.scrollY / windowHeight) * 100;
         scrollProgress.style.width = scrolled + '%';
-    });
+       });
 
-    // Mobile Menu Auto Close
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            if(navbarCollapse.classList.contains('show')) {
-                new bootstrap.Collapse(navbarCollapse).hide();
-            }
-        });
-    });
-
-    // Animate Elements on Scroll
-    const animateOnScroll = () => {
-        const elements = document.querySelectorAll('.feature-card, .stats-number');
-        elements.forEach(el => {
-            const elementTop = el.getBoundingClientRect().top;
-            const elementBottom = el.getBoundingClientRect().bottom;
-            
-            if(elementTop < window.innerHeight && elementBottom > 0) {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            }
-        });
-    };
-
-    window.addEventListener('scroll', animateOnScroll);
-    window.addEventListener('load', animateOnScroll);
-
-    // Animated Counter
-    const animateCounter = () => {
-        const counters = document.querySelectorAll('.stats-number');
-        const speed = 200;
-
-        counters.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute('data-target').replace(/[^0-9.]/g, '');
-                const count = +counter.innerText.replace(/[^0-9.]/g, '');
-                const suffix = counter.getAttribute('data-target').replace(/[0-9.]/g, '');
-                const increment = target / speed;
-
-                if(count < target) {
-                    counter.innerText = Math.ceil(count + increment) + suffix;
-                    setTimeout(updateCount, 10);
-                } else {
-                    counter.innerText = target + suffix;
+        // Mobile Menu Auto Close
+       document.querySelectorAll('.nav-link').forEach(link => {
+       link.addEventListener('click', () => {
+             const navbarCollapse = document.querySelector('.navbar-collapse');
+              if(navbarCollapse.classList.contains('show')) {
+                   new bootstrap.Collapse(navbarCollapse).hide();
                 }
-            }
-            updateCount();
-        });
-    };
+            });
+       });
 
-    // Intersection Observer for Counters
-    const observer = new IntersectionObserver((entries) => {
+
+        // Animate Elements on Scroll
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.feature-card, .stats-number');
+          elements.forEach(el => {
+          const elementTop = el.getBoundingClientRect().top;
+            const elementBottom = el.getBoundingClientRect().bottom;
+           if(elementTop < window.innerHeight && elementBottom > 0) {
+            el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+           }
+          });
+       };
+         window.addEventListener('scroll', animateOnScroll);
+       window.addEventListener('load', animateOnScroll);
+
+
+          // Animated Counter
+           const animateCounter = () => {
+                 const counters = document.querySelectorAll('.stats-number');
+             const speed = 200;
+
+              counters.forEach(counter => {
+                 const updateCount = () => {
+                   const target = +counter.getAttribute('data-target').replace(/[^0-9.]/g, '');
+                    const count = +counter.innerText.replace(/[^0-9.]/g, '');
+                  const suffix = counter.getAttribute('data-target').replace(/[0-9.]/g, '');
+                     const increment = target / speed;
+                       if(count < target) {
+                        counter.innerText = Math.ceil(count + increment) + suffix;
+                        setTimeout(updateCount, 10);
+                  } else {
+                      counter.innerText = target + suffix;
+                     }
+               }
+                    updateCount();
+           });
+       };
+         // Intersection Observer for Counters
+     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting) {
-                animateCounter();
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
+          if(entry.isIntersecting) {
+               animateCounter();
+              observer.unobserve(entry.target);
+           }
+       });
+  }, { threshold: 0.5 });
+     document.querySelectorAll('.stats-number').forEach(counter => {
+         observer.observe(counter);
+  });
 
-    document.querySelectorAll('.stats-number').forEach(counter => {
-        observer.observe(counter);
-    });
 
-    // Smooth Scroll
+        // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if(target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+      anchor.addEventListener('click', function(e) {
+             e.preventDefault();
+             const target = document.querySelector(this.getAttribute('href'));
+             if(target) {
+                   target.scrollIntoView({
+                     behavior: 'smooth',
+                       block: 'start'
+              });
+         }
         });
     });
 
-    // Form Submission
-    document.querySelector('form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('تم استلام طلبك بنجاح، سنتواصل معك قريبًا!');
-        e.target.reset();
+                 // Form Submission (Modified for better handling)
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent actual form submission
+             const formData = new FormData(e.target);
+
+             fetch(e.target.action, {
+                method: 'POST', // Or 'GET', based on what's suitable for your needs
+               body: formData, // Or use JSON.stringify(Object.fromEntries(formData)) if sending JSON
+              })
+            .then(response => {
+                  if(response.ok){
+                   alert('تم استلام طلبك بنجاح، سنتواصل معك قريبًا!');
+                   e.target.reset();
+                } else{
+                  console.error("Failed to Submit Form")
+            }
+        })
+           .catch(error => {
+             console.error('Error:', error);
+              alert('حدث خطأ أثناء إرسال الطلب، يرجى المحاولة لاحقًا.');
+        })
     });
 
-    // Lazy Load Images
+          // Smooth Scroll to Contact Section
+      document.getElementById('scrollToContact').addEventListener('click', function(e) {
+             e.preventDefault();
+             const target = document.getElementById('contact');
+            if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+             }
+         });
+
+
+         // Lazy Load Images
     const images = document.querySelectorAll('img');
-    images.forEach(img => {
+   images.forEach(img => {
         img.loading = "lazy";
-        img.decoding = "async";
-    });
-</script>
-</body>
+     img.decoding = "async";
+   });
+
+   </script>
+  </body>
 </html>
