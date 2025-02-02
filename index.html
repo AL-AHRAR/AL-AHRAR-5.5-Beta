@@ -795,13 +795,17 @@
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
              }
          });
-          // Lazy Load Images
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-        img.loading = "lazy";
-        img.decoding = "async";
-   });
+    
+  // إزالة رابط GitHub من الفوتر
+  const footerLink = document.querySelector('footer a[href*="github"]');
+  if (footerLink) footerLink.parentElement.remove();
 
-   </script>
-  </body>
+  // Lazy Load Images
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+      img.loading = "lazy";
+      img.decoding = "async";
+  });
+</script>
+</body>
 </html>
